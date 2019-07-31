@@ -1,3 +1,7 @@
+dice_roller.py
+  Module that contains the capability to roll any number of dice with any amount of sides and can have a modifier be added to every roll
+  Ability to roll with advantage or disadvantage
+
 TODO List:
 
 Character sheet
