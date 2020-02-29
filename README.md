@@ -61,9 +61,9 @@ Ability to make a specific roll (i.e. rollInsight, rollDamage, etc)
 
     Alignment
 
-      Can be point bought using standard array or rolled using the roll 4 d6 drop lowest for each skill
+  Can be point bought using standard array or rolled using the roll 4 d6 drop lowest for each skill
 
-      Skills will be assigned from highest to lowest based on predetermined "rankings" for best skill of each class
+  Skills will be assigned from highest to lowest based on predetermined "rankings" for best skill of each class
 
   Can generate up to any level but will not select any spells or specializations (like Circle of Moon druid or Swashbuckler rogue)
   
