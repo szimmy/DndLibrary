@@ -1,8 +1,16 @@
+"""
+dice_roller.py is a module which implements basic functions for rolling a dice
+You can use roll_dice to roll an x sided dice n number of times and apply modifier m
+to each roll result.
+roll_advantage uses roll_dice and rolls 2 dice and gives you back the higher result
+roll_disadvantage uses roll_dice and rolls 2 dice and gives you back the lower result
+"""
+
 from random import randint
 
 
 def roll_dice(num_sides, num_rolls, modifier=0, print_values=False):
-    """ 
+    """
     Method which rolls a dice a set number of times
     num_sides - int, number of sides that the dice has (d4, d6, d8, etc)
     num_rolls - int, number of times to roll the dice
@@ -17,7 +25,7 @@ def roll_dice(num_sides, num_rolls, modifier=0, print_values=False):
         )
 
     ret = []
-    for i in range(num_rolls):
+    for _ in range(num_rolls):
         ret.append(randint(1, num_sides) + modifier)
 
     if print_values:
@@ -28,14 +36,14 @@ def roll_dice(num_sides, num_rolls, modifier=0, print_values=False):
 
 def roll_disadvantage(num_sides=20, modifier=0, print_value=False):
     """
-    Rolling with disadvantage means roll twice and take the 
+    Rolling with disadvantage means roll twice and take the
     lowest value
     num_sides - int, number of sides that the dice has (d4, d6, d8, etc)
     modifier - int, value to be added to the rolls. Optional input
     print_value - bool, print the item to be returned as well as return them. Optional input
     return - int, value of the disadvantaged roll
     """
-    rolls = roll_dice(20, 2, modifier)
+    rolls = roll_dice(num_sides=num_sides, num_rolls=2, modifier=modifier)
     ret = min(rolls)
 
     if print_value:
@@ -46,14 +54,14 @@ def roll_disadvantage(num_sides=20, modifier=0, print_value=False):
 
 def roll_advantage(num_sides=20, modifier=0, print_value=False):
     """
-    Rolling with advantage means roll twice and take the 
+    Rolling with advantage means roll twice and take the
     highest value
     num_sides - int, number of sides that the dice has (d4, d6, d8, etc)
     modifier - int, value to be added to the rolls. Optional input
     print_value - bool, print the item to be returned as well as return them. Optional input
     return - int, value of the advantaged roll
     """
-    rolls = roll_dice(20, 2, modifier)
+    rolls = roll_dice(num_sides=num_sides, num_rolls=2, modifier=modifier)
     ret = max(rolls)
 
     if print_value:
