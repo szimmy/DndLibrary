@@ -1,12 +1,12 @@
-dice_roller.py
+#dice_roller.py
 
     Module that contains the capability to roll any number of dice with any amount of sides and can have a modifier be added to every roll
 
     Ability to roll with advantage or disadvantage
 
-TODO List:
+#TODO List:
 
-Character sheet
+#Character sheet
 
     Level
 
@@ -32,12 +32,12 @@ Character sheet
 
     Weapon (damage, what skill to roll)
 
-  Character sheets will be saved as json files for easy storage and editing
+Character sheets will be saved as json files for easy storage and editing
 
-  Ability to make a specific roll (i.e. rollInsight, rollDamage, etc)
+Ability to make a specific roll (i.e. rollInsight, rollDamage, etc)
 
 
-Character generator
+#Character generator
 
     Random class
 
@@ -70,7 +70,7 @@ Character generator
   Characters will be saved as json files
   
 
-Random encounter generator
+#Random encounter generator
 
     Can generate encounters based off of
 
