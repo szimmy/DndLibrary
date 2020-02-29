@@ -1,14 +1,12 @@
 dice_roller.py
 
-  Module that contains the capability to roll any number of dice with any amount of sides and can have a modifier be added to every roll
+    Module that contains the capability to roll any number of dice with any amount of sides and can have a modifier be added to every roll
 
-  Ability to roll with advantage or disadvantage
+    Ability to roll with advantage or disadvantage
 
 TODO List:
 
 Character sheet
-
-  Keeps track of
 
     Level
 
@@ -23,7 +21,6 @@ Character sheet
     Simple built in race / class feats (like Lucky for halflings)
 
     Class
-
 
     Race
 
@@ -41,8 +38,6 @@ Character sheet
 
 
 Character generator
-
-  Selects
 
     Random class
 
@@ -77,12 +72,12 @@ Character generator
 
 Random encounter generator
 
-  Can generate encounters based off of
+    Can generate encounters based off of
 
-    Player level
+        Player level
 
-    Party size
+        Party size
 
-    Intended difficulty level
+        Intended difficulty level
 
-    Type of enemy
+        Type of enemy
